@@ -1,44 +1,81 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Соло на клавиатуре</title>
-    <link rel="stylesheet" href="task.css">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Соло на клавиатуре</title>
+  <link rel="stylesheet" href="task.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/popup.css">
+  <script src="verbalizer.js"></script>
+  <script src="tools.js"></script>
+  <script src="words.js"></script>
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo__container">
-          <a href="https://netology.ru/" class="logo__link"></a>
-        </div>
-        <h1 class="header__title">
-            Домашнее задание к занятию 1.3 «Объект события». Соло на клавиатуре.
-        </h1>
-    </header>
-    <main class="content">
-        <div class="card">
-            <div id="game">
-                <div class="status">
-                    <p>
-                        Правильно введённых слов: <span class="status__wins">0</span>
-                    </p>
-                    <p>
-                        Неправильно введённых слов: <span class="status__loss">0</span>
-                    </p>
-                </div>
-                <div class="word">
-                    <span class="symbol">К</span>
-                    <span class="symbol">о</span>
-                    <span class="symbol">л</span>
-                    <span class="symbol">я</span>
-                </div>
+  <header class="header">
+    <div class="logo__container">
+      <a href="https://netology.ru/" class="logo__link"></a>
+    </div>
+    <h1 class="header__title">
+      Домашнее задание к занятию 1.3 «Объект события». Соло на клавиатуре.
+    </h1>
+  </header>
+  <main class="content">
+    <div class="card card-wide">
+      <div id="game">
+        <web-verbalizer data-tts-enabled="browser" data-tts-volume="0.8">
+          <div class="toolbar">
+
+            <button id="button-play">start</button>
+
+            <div class="toolbar-item">
+              <label><input type="checkbox" id="checkbox-timer">Таймер</label>
+              <span id="timer" class="mark"></span>
             </div>
-        </div>
-    </main>
-    
-    <script src="task.js"></script>
+            <div class="toolbar-item">
+              <span>Скорость</span>
+              <span id="rate" class="mark"></span>
+            </div>
+            <div class="toolbar-item">
+              <span>Верно</span>
+              <span id="wins" class="mark">0</span>
+            </div>
+            <div class="toolbar-item">
+              <span>Ошибки</span>
+              <span id="loss" class="mark">0</span>
+            </div>
+            <div class="toolbar-item">
+              <label for="select-dictionary">Слова: </label>
+              <select id="select-dictionary">
+                <option value="auto">русские и английские</option>
+                <option value="en">английские</option>
+                <option selected value="ru">русские</option>
+              </select>
+            </div>
+          </div>
+          <div class="word" slot="header" aria-live="none">
+            <span class="symbol">G</span>
+            <span class="symbol">a</span>
+            <span class="symbol">m</span>
+            <span class="symbol">e</span>
+          </div>
+        </web-verbalizer>
+      </div>
+    </div>
+  </main>
+  <dialog class="dialog report" id="game-report">
+    <button class="dialog-close" value="close">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <div class="dialog-content">
+      <h3 class="dialog-title">Соло на клавиатуре</h3>
+      <div class="game-result"></div>
+    </div>
+  </dialog>
+  <script src="task.js"></script>
 </body>
+
 </html>

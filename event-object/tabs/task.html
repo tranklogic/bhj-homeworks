@@ -1,53 +1,76 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Вкладки</title>
-    <link rel="stylesheet" href="task.css">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Вкладки</title>
+  <link rel="stylesheet" href="task.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo__container">
-          <a href="https://netology.ru/" class="logo__link"></a>
-        </div>
-        <h1 class="header__title">
-            Домашнее задание к занятию 1.3 «Объект события». Управление вкладками.
-        </h1>
-    </header>
-    <div class="tabs" id="tabs1">
-        <div class="tab__navigation">
-            <div class="tab tab_active">
-                Главная
-            </div>
-            <div class="tab">
-                Обо мне
-            </div>
-            <div class="tab">
-                Контакты
-            </div>
-        </div>
-        <div class="tab__contents">
-            <div class="tab__content tab__content_active">
-                <h2>Главная</h2>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem facilis, animi provident sint. Incidunt ea nostrum, nam nulla cupiditate consectetur, alias et labore, porro officia laborum. Velit placeat ipsa atque.</div>
-                <div>Alias rerum repellendus minima error, sit facere. Nulla ipsa doloremque quae libero perspiciatis doloribus ducimus ad optio saepe cum magni minus voluptas aut magnam, accusantium eveniet, quo nesciunt sit quam.</div>
-                <div>Magni delectus laborum laboriosam dicta quibusdam, culpa autem voluptatem doloribus totam vero nisi expedita beatae blanditiis iure labore voluptas perspiciatis minima officiis nam, necessitatibus molestiae veniam consequuntur! Praesentium, eligendi,
-                    nihil!</div>
-                <div>Est impedit facilis minima tempore, sed voluptate error quae praesentium rem eum repellat illum unde, quo dolorum atque consectetur libero cum blanditiis odit assumenda! Quidem recusandae, inventore voluptatum! Unde, natus!</div>
-                <div>Veritatis assumenda ipsam delectus illum rerum, voluptatem quaerat natus dolorum odio adipisci velit a. Minima voluptate quasi fugit ducimus repellat ipsa, accusantium pariatur nisi neque, dolorum ratione mollitia, sunt voluptatem!</div>
-            </div>
-            <div class="tab__content">
-                Я краб!
-            </div>
-            <div class="tab__content">
-                Содержимое в процессе написания. Поищите в Галактике!
-            </div>
-        </div>
+  <header class="header">
+    <div class="logo__container">
+      <a href="https://netology.ru/" class="logo__link"></a>
     </div>
-    <script src="task.js"></script>
+    <h1 class="header__title">
+      Домашнее задание к занятию 1.3 «Объект события». Управление вкладками.
+    </h1>
+  </header>
+  <div class="tabs" id="tabs1">
+    <h2>Lorem Ipsum - текст "Рыба", почему, откуда и зачем?</h2>
+    <div class="tab__navigation">
+      <div class="tab tab_active">
+        История
+      </div>
+      <div class="tab">
+        Lorem ipsum
+      </div>
+      <div class="tab">
+        Перевод
+      </div>
+    </div>
+    <div class="tab__contents">
+      <div class="tab__content tab__content_active">
+        <h3>История о Lorem ipsum</h3>
+        <h4>Что это такое?</h4>
+        <p>
+          Lorem Ipsum - это текст-"рыба", используемый в областях связанных работой со шрифтами, самые популярные: печать и веб-дизайн. Данный текст является неформальным стандартом для текстов на латинице с начала XVI века, когда неизвестный печатник создал коллекцию различных шрифтов и для их демонстрации использовал Lorem Ipsum. Для популярности в новое время ему послужила публикация листов Letraset с образцами, используя текст «рыбу» в 60-х годах. А в последнее время, его можно заметить в текстовых редакторах, в том числе связанных с веб-программированием, например Sublime Text, PageMaker. Также текст стал частью поп-культуры и его отрывки изображаются на товарах и продуктах.
+        </p>
+        <h4>Почему он используется?</h4>
+        <p>
+          При композиционной задаче, будь то шрифт или размещение материала на веб-страницу, доподлинно известно что, текстовый материал, наполненный осмысленным текстом, забирает одеяло внимания на себя и не даёт объективно оценить не смысловые конструкции и мешает сосредоточиться на изначальной объекте оценивания.
+          Lorem Ipsum используется по причине того, что он даёт более-менее стандартное заполнение шаблона и приближенное к реальному распределение пробелов, запятых и длинных слов. Чего не получить при многократном копировании предложения: «Тут текст».
+          Сейчас, большое количество программ для вёрстки и HTML редакторы используют Lorem Ipsum как шаблон типового текста при заполнении страниц и даже встраивают горячие комбинации клавиш для него. Например в Sublime Text при вводе слова "Lorem" и нажатии клавиши "Tab", контейнер заполнится текстом-"рыбой".
+        </p>
+        <h4>Откуда он появился?</h4>
+        <p>
+          Lorem Ipsum не случайная комбинация латинских слов. Впервые он был упомянут в одном из фрагментов классической латыни в 45 году нашей эры. Известный профессор латыни Ричард МакКлинток из колледжа Hampden-Sydney, штат Вирджиния, по поиску самого странного слова «consectetur» в латинской литература, обнаружил первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат был посвящен теории этики и имел популярность в эпоху Возрождения.
+        </p>
+      </div>
+      <div class="tab__content">
+        <h3>Текст Lorem ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem facilis, animi provident sint. Incidunt ea nostrum, nam nulla cupiditate consectetur, alias et labore, porro officia laborum. Velit placeat ipsa atque.
+          Alias rerum repellendus minima error, sit facere. Nulla ipsa doloremque quae libero perspiciatis doloribus ducimus ad optio saepe cum magni minus voluptas aut magnam, accusantium eveniet, quo nesciunt sit quam.
+          Magni delectus laborum laboriosam dicta quibusdam, culpa autem voluptatem doloribus totam vero nisi expedita beatae blanditiis iure labore voluptas perspiciatis minima officiis nam, necessitatibus molestiae veniam consequuntur! Praesentium, eligendi, nihil!
+          Est impedit facilis minima tempore, sed voluptate error quae praesentium rem eum repellat illum unde, quo dolorum atque consectetur libero cum blanditiis odit assumenda! Quidem recusandae, inventore voluptatum! Unde, natus!
+          Veritatis assumenda ipsam delectus illum rerum, voluptatem quaerat natus dolorum odio adipisci velit a. Minima voluptate quasi fugit ducimus repellat ipsa, accusantium pariatur nisi neque, dolorum ratione mollitia, sunt voluptatem!
+        </p>
+      </div>
+      <div class="tab__content">
+        <h3>О пределах добра и зла</h3>
+        <p>
+          Но чтобы вы поняли, откуда возникает это превратное представление людей, порицающих наслаждение и восхваляющих страдания, я раскрою перед вами всю картину и разъясню, что именно говорил этот человек, открывший истину, которого я бы назвал зодчим счастливой жизни. Действительно, никто не отвергает, не презирает, не избегает наслаждений только из-за того, что это наслаждения, но лишь из-за того, что тех, кто не умеет разумно предаваться наслаждениям, постигают великие страдания. Равно как нет никого, кто возлюбил бы, предпочел и возжаждал бы само страдание только за то, что это страдание, а не потому, что иной раз возникают такие обстоятельства, когда страдания и боль приносят некое и немалое наслаждение. Если воспользоваться простейшим примером, то кто из нас стал бы заниматься какими бы то ни было тягостными физическими упражнениями, если бы это не приносило с собой некоей пользы? И кто мог бы по справедливости упрекнуть стремящегося к наслаждению, которое не несло бы с собой никаких неприятностей, или того, кто избегал бы такого страдания, которое не приносило бы с собой никакого наслаждения?
+          Но мы порицаем и считаем безусловно заслуживающими справедливого негодования тех, кто, будучи обольщенным и развращенным соблазнами представляющихся им наслаждений, в исступлении страсти не предвидят, какие страдания и какие несчастья их ожидают. Они виновны так же, как и те, кто по душевной слабости, то есть из желания избежать страданий и боли отказывается от исполнения своего долга. Впрочем, здесь очень легко и просто провести различия, потому что, когда мы свободны и нам предоставлена полная возможность выбора желаемого, когда ничто не мешает нам делать то, что нам больше нравится, любое наслаждение следует признать желанным, а любое страдание отвратительным. Но при некоторых обстоятельствах — или по требованию долга, или в силу какой-то необходимости часто приходится забывать о наслаждениях и не бежать тягостей. Поэтому мудрец придерживается в этом случае следующего принципа выбора — или, отказываясь от удовольствия, он получает какие-то иные и даже большие наслаждения, или, претерпевая страдания, он избавляется от более жестоких.<br>
+          © Цицерон
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="task.js"></script>
 </body>
+
 </html>

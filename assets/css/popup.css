@@ -1,0 +1,38 @@
+.dialog {
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: transparent;
+  font-size: 13px;
+}
+
+.dialog::backdrop {
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: url(../svg/form-x.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  cursor: pointer;
+}
+
+.dialog-title {
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.dialog-content {
+  background-color: #ffffff;
+  padding: 15px;
+}
